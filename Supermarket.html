@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEO_N Supermarket</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: url('https://i.imgur.com/o8YtZqK.jpeg') no-repeat center center/cover;
+            color: #fff;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 165, 0, 0.9);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #ff5722;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #e64a19;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 165, 0, 0.9);
+            border-radius: 10px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <h1>LEO_N SUPERMARKET</h1>
+        </header>
+
+        <nav>
+            <a href="#home" onclick="loadHome()">Home</a>
+            <a href="#products" onclick="loadProducts()">Products</a>
+            <a href="#contact" onclick="loadContact()">Contact Us</a>
+        </nav>
+
+        <div class="content" id="mainContent">
+            <h2>Welcome to LEO_N Supermarket</h2>
+            <p>Your number one store for fresh groceries, household items, and daily essentials.</p>
+        </div>
+
+        <footer>
+            <p>© 2025 LEO_N Supermarket. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function loadHome() {
+            document.getElementById('mainContent').innerHTML = `
+                <h2>Welcome to LEO_N Supermarket</h2>
+                <p>Your number one store for fresh groceries, household items, and daily essentials.</p>
+            `;
+        }
+
+        function loadProducts() {
+            document.getElementById('mainContent').innerHTML = `
+                <h2>Our Products</h2>
+                <p>We offer fruits, vegetables, meats, drinks, snacks, home supplies, and more.</p>
+            `;
+        }
+
+        function loadContact() {
+            document.getElementById('mainContent').innerHTML = `
+                <h2>Contact Us</h2>
+                <p>Email: support@leonmarket.com</p>
+                <p>Phone: +263 78 154 0622</p>
+                <p>Location: Harare, Zimbabwe</p>
+            `;
+        }
+    </script>
+</body>
+</html>
