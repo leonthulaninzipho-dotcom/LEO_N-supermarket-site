@@ -1,2 +1,2 @@
 # LEO_N-supermarket-site
-A site about my supermarket.
+A code for LEO_N supermarket.
